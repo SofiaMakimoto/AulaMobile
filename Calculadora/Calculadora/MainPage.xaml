@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculadora.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label Text="Horizontal - Center"             
+          x:Name="BemVindo"
+               HorizontalOptions="Center"
+               BackgroundColor="Aquamarine"/>
+        <Label Text="Horizontal - Fill"             
+          x:Name="BemVindo2"
+               HorizontalOptions="Fill"
+               BackgroundColor="Cornsilk"/>
+        <Label Text="Horizontal - End"             
+          x:Name="BemVindo3"
+               HorizontalOptions="End"
+               BackgroundColor="MistyRose"/>
+        <Label Text="Horizontal - Start"             
+          x:Name="BemVindo4"
+               HorizontalOptions="Start"
+               BackgroundColor="AliceBlue"/>
+        <Label Text="Vertical - StartAndExpand"             
+          x:Name="BemVindo5"
+               VerticalOptions="StartAndExpand"
+               BackgroundColor="Aquamarine"/>
+        <Label Text="Vertical - Start"             
+          x:Name="BemVindo6"
+               VerticalOptions="Start"
+               BackgroundColor="Cornsilk"/>
+        <Button Text="Botãozinho" 
+                BackgroundColor="Pink"/>
+
+        <Button Text="Botão" />
+
+        <StackLayout Orientation="Horizontal"
+                    Padding="10,10,10,10">
+            <Button Text= "Text x"  
+                    HorizontalOptions="Center" 
+                    x:Name= "botao_x" />
+            <Button Text="Text Y" HorizontalOptions="Center"/>
+            <Button Text="text z" HorizontalOptions="Center"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

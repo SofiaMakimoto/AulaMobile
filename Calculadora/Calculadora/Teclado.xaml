@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calculadora.Teclado">
+  <ContentView.Content>
+      <StackLayout BackgroundColor="Cornsilk" Orientation="Vertical">
+            <StackLayout Padding="10,10,10,10" BackgroundColor="PaleTurquoise">
+                <Entry Placeholder="0" HorizontalTextAlignment="End" FontSize="Header" />
+            </StackLayout>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal"
+                    Padding="10,10,10,10">
+                    <Button Text= "9" HorizontalOptions="Center" x:Name= "n9" />
+                    <Button Text="8" HorizontalOptions="Center" x:Name= "n8"/>
+                    <Button Text="7" HorizontalOptions="Center" x:Name= "n7"/>
+                    <Button Text="X" HorizontalOptions="Center" x:Name= "multipicacao"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                    Padding="10,10,10,10">
+                    <Button Text= "4" HorizontalOptions="Center" x:Name= "n4" />
+                    <Button Text="5" HorizontalOptions="Center" x:Name= "n5"/>
+                    <Button Text="6" HorizontalOptions="Center" x:Name= "n6"/>
+                    <Button Text=":" HorizontalOptions="Center" x:Name= "divisao"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                    Padding="10,10,10,10" >
+                    <Button Text= "1" HorizontalOptions="Center" x:Name= "n1" />
+                    <Button Text="2" HorizontalOptions="Center" x:Name= "n2"/>
+                    <Button Text="3" HorizontalOptions="Center" x:Name= "n3"/>
+                    <Button Text="+" HorizontalOptions="Center" x:Name= "soma"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                    Padding="10,10,10,10">
+                    <Button Text= "0" HorizontalOptions="Center" x:Name= "n0" />
+                    <Button Text="." HorizontalOptions="Center" x:Name= "virgula"/>
+                    <Button Text="=" HorizontalOptions="Center" x:Name= "igual"/>
+                    <Button Text="-" HorizontalOptions="Center" x:Name= "subtracao"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                    Padding="10,10,10,10" >
+                    <Button Text= "C" HorizontalOptions="FillAndExpand" x:Name= "apagaTudo" />
+                    <Button Text="CE" HorizontalOptions="FillAndExpand" x:Name= "apagaCE"/>
+                </StackLayout>
+            </StackLayout>
+      </StackLayout>
+  </ContentView.Content>
+</ContentView>
